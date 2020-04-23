@@ -1,6 +1,6 @@
 # botodocs: a (hopefully) better boto3 doc site
 
-![]()
+![](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiOXRZbVgzbnltSnowWGR2TVF3cDlqNEZPUjRXS2NLSVVLUjc2T0hJeWtwYlBSUUpyU1owZVFPRUFuVndadDk4TjVMSXFQQmhhRFIrYzRmc0QvSFJ2TVFRPSIsIml2UGFyYW1ldGVyU3BlYyI6Im82eXdQRTYxMzdmY1Y1czEiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
 
 
 > Visit https://botodocs.com
