@@ -1,0 +1,26 @@
+# botodocs: a (hopefully) better boto3 doc site
+
+![]()
+
+
+> Visit https://botodocs.com
+
+# Note to forkers:
+This project uses docsify to convert the markdown files into a simple static website.
+
+- `npm i docsify-cli -g`
+- run `pipenv run python main.py` to generate the pages and serve a website (note that it calls `docsify serve docs` behind the scenes)
+- Open browser at http://localhost:3000
+- Edits to static files will be reloaded live. Otherwise rerun main.py for dynamic pages.
+
+## Deploying on AWS
+Uses the AWS CDK. See [lib/pipeline-construct.js](lib/pipeline-construct.js) for details on the deployment pipeline.
+- `npm i -g aws-cdk`
+- `cdk deploy`
+
+# Legal
+Released under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Project is based on boto3. Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved. Licensed Apache Licence 2.0. See file [original-LICENCE](original-LICENCE) for details
