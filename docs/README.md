@@ -1,6 +1,6 @@
 # Overview
 
-Welcome to botodocs! This site serves as the boto3 reference for its features.
+Welcome to botodocs! This site serves as the unofficial boto3 reference for its features.
 
 These include the boto3:
 - clients
