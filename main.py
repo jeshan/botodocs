@@ -61,8 +61,8 @@ def go():
     services_lines = create_services_page()
     create_readme()
     for index, client_name in enumerate(clients):
-        if client_name not in ['ec2', 'accessanalyzer', 'glacier', 'ssm', 'wafv2', 'cloudformation']:
-            continue
+        # if client_name not in ['ec2', 'accessanalyzer', 'glacier', 'ssm', 'wafv2', 'cloudformation']:
+        #   continue
         client = boto3.client(client_name)
         class_name = type(client).__name__
         service_model: ServiceModel = client._service_model
