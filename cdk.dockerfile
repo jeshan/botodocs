@@ -8,6 +8,5 @@ RUN npm i
 COPY cdk.*json ./
 #COPY lib lib
 #COPY bin bin
-COPY docs docs/
 
 ENTRYPOINT ["npm", "run", "cdk"]

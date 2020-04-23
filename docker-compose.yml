@@ -9,7 +9,6 @@ services:
       - '~/.aws:/root/.aws'
       - './lib:/app/lib'
       - './bin:/app/bin'
-      #- './docs:/app/docs'
 
   cdk-diff:
     <<: *cdk
