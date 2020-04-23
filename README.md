@@ -5,6 +5,15 @@
 
 > Visit https://botodocs.com
 
+# Why
+I thought that the official docs has a lot of room to improve, so I built a "better" site in the meantime.
+
+# Features
+- lots of caching
+- better navigation
+- fast to load
+- shorter pages
+
 # Note to forkers:
 This project uses docsify to convert the markdown files into a simple static website.
 
