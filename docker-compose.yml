@@ -1,0 +1,27 @@
+version: '3.4'
+
+services:
+  cdk: &cdk
+    build:
+      context: .
+      dockerfile: cdk.dockerfile
+    volumes:
+      - '~/.aws:/root/.aws'
+      - './lib:/app/lib'
+      - './bin:/app/bin'
+      #- './docs:/app/docs'
+
+  cdk-diff:
+    <<: *cdk
+    command:
+      - diff
+
+  cdk-synth:
+    <<: *cdk
+    command:
+      - synth
+
+  cdk-deploy:
+    <<: *cdk
+    command:
+      - deploy
