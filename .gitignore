@@ -1,0 +1,5 @@
+docs/_sidebar.md
+__pycache__/
+botodocs.iml
+docs/services/
+docs/services.md
