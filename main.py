@@ -49,7 +49,7 @@ It has been designed for better usability than the official docs, namely by prov
 
 You're looking at the docs for boto3 version **{boto3.__version__}**. This site is automatically deployed every 3 days (last time was on {date}) so you should see full feature coverage here.
 
-Note that the official boto3 guides have been left out and you should consult the official website for that:
+Note that the official boto3 tutorials and guides have been left out and you should consult the official website for that:
 
 https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
 """,
