@@ -1,4 +1,5 @@
 import sys
+from datetime import datetime
 
 import boto3
 from botocore.model import ServiceModel
@@ -24,6 +25,7 @@ def create_services_page():
 def create_readme():
     path = 'docs/README.md'
     create_new_file(path)
+    date = datetime.utcnow().strftime('%Y-%m-%d at %H:%M UTC')
     write_to_file(
         path,
         f"""# Overview
@@ -45,7 +47,7 @@ It has been designed for better usability than the official docs, namely by prov
 - copy-pastable snippets covering the various boto3 features
 - offline search
 
-You're looking at the docs for boto3 version **{boto3.__version__}**. This site is automatically deployed every 3 days so you should see full feature coverage here.
+You're looking at the docs for boto3 version **{boto3.__version__}**. This site is automatically deployed every 3 days (last time was on {date}) so you should see full feature coverage here.
 
 Note that the official boto3 guides have been left out and you should consult the official website for that:
 
