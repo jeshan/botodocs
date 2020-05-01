@@ -20,9 +20,10 @@ from util import (
     get_variable_name_for,
 )
 
-# noinspection PyUnresolvedReferences
-import botostubs
-
+try:
+    import botostubs
+except:
+    pass
 
 from waiters import handle_sub_resource_waiters
 
