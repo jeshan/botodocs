@@ -30,6 +30,20 @@
             pagination: {
               crossChapter: true
             },
+            plugins:[function(hook) {
+              var footer = [
+                '<hr/>',
+                '<footer>',
+                '<span>Original documentation is © Copyright 2020, Amazon Web Services, Inc.</span><br/>',
+                '<span>This site is not maintained by or affiliated with AWS</span><br/>',
+                '<span>Custom code is &copy; Jeshan G. BABOOA 2020 released under <a href="https://github.com/jeshan/botodocs/blob/master/LICENCE">the Simplified BSD Licence</a>.</span><br/>',
+                '</footer>'
+              ].join('');
+
+              hook.afterEach(function(html) {
+                return html + footer;
+              });
+            }],
             repo,
             search: {
               paths: 'auto',
