@@ -94,7 +94,7 @@ def get_shape_doc(shapes_path, shape: shape_union):
     docstr = f'## {shape.name}\n'
     docstr += f'> {shape.documentation}\n\n'
     if hasattr(shape, 'members'):
-        members = sorted(shape.members.items(), reverse=True)
+        members = sorted(shape.members.items())
     elif hasattr(shape, 'member'):
         members = [(shape.member.name, shape.member)]
     elif isinstance(shape, MapShape):
