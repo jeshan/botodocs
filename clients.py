@@ -217,14 +217,14 @@ def get_param_str(input_shape, shapes_path):
 
 
 def get_param_str_params(input_shape, shapes_path, parameters):
-    param_list = []
+    required_list, optional_list = [], []
     for name, param in parameters.items():
         item = get_param_name_with_type_hint(input_shape, name, param, shapes_path)
         if name in input_shape.required_members:
-            param_list.insert(0, item)
+            required_list.append(item)
         else:
-            param_list.append(item)
-    return ', '.join(param_list)
+            optional_list.append(item)
+    return ', '.join(required_list + optional_list)
 
 
 def find_all_shapes(shapes):
