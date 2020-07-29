@@ -31,6 +31,8 @@ This is what the CDK will deploy:
 
 ![](/diagram.png)
 
+*Image generated with [cfnbuddy](https://www.cfnbuddy.com)*
+
 # Legal
 Released under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
 
